@@ -1,7 +1,8 @@
 import requests
+import os
 
 OWM_ENDPOINT = "https://api.openweathermap.org/data/2.5/forecast"
-api_key = "92297fde1d390c05d52499047990caae"
+api_key = os.environ.get(OWM_API_KEY)
 lat = 11.016844
 lon = 76.955833
 
