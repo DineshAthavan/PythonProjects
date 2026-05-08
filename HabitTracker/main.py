@@ -1,10 +1,11 @@
 import requests
 from datetime import datetime
+import os
 
 Pixela_Endpoint = "https://pixe.la/v1/users"
 
 user_params = {
-    "token": "tfvoegdcksoagafefasgo4c0advd9",
+    "token": os.environ.get(PIXELA_KEY),
     "username": "dineshathavan",
     "agreeTermsOfService": "yes",
     "notMinor": "yes",
